@@ -45,7 +45,7 @@ It helps an operator understand **what is happening, why it is happening, who is
 | Signature feature | Operational value |
 |---|---|
 | 🔗 **Relationship Explorer** | Connects a selected flight, gate or passenger to security, baggage, staff, maintenance, retail and timeline records. |
-| 🛫 **Airside Digital Twin** | Displays live gate conditions and launches the selected aircraft along an animated SVG taxi route. |
+| 🛫 **Airside Digital Twin** | Displays live gate conditions. Select an occupied gate or run the taxi demo to watch its connected aircraft move along an animated SVG route with operational audio. |
 | 🧠 **Explainable Intelligence** | Shows root cause, affected entities, downstream exposure and a recommended operator action. |
 | 📡 **Cascade Radar** | Uses transparent rule-based analysis to forecast the next connected operational impact. |
 | 🧬 **Judge Mode Lineage** | Reveals which supplied CSV datasets contribute to visible metrics and insights. |
@@ -151,9 +151,13 @@ npm run preview
 
 ## 🎬 90-Second Demo Flow
 
+<p align="center">
+  <a href="https://aeropulse-airport-operation-lhar.vercel.app/"><strong>🚀 Open the Live Demo</strong></a>
+</p>
+
 1. Enter the Command Center and introduce the simulation clock.
 2. Show airport health, event feed and active reasoned alerts.
-3. Select an occupied gate and launch its connected aircraft.
+3. Open the **Airside Movement Map**, select a glowing occupied gate and watch its connected aircraft taxi across the live route. The **Run taxi demo** button can also launch the movement instantly.
 4. Open a delayed flight and reveal its cross-dataset relationships.
 5. Explain its root-cause narrative and affected journeys.
 6. Open **Insights** and demonstrate Cascade Radar.
@@ -196,6 +200,14 @@ npm run preview
 - [`DATA_SCHEMA.md`](./DATA_SCHEMA.md) — field mappings and relationships
 - [`PROJECT_EXPLANATION.md`](./PROJECT_EXPLANATION.md) — product and architecture explanation
 - [`DEMO_SCRIPT.md`](./DEMO_SCRIPT.md) — judging walkthrough
+
+---
+
+## 🌐 Live Application
+
+Experience the complete airport operations simulation here:
+
+### [https://aeropulse-airport-operation-lhar.vercel.app/](https://aeropulse-airport-operation-lhar.vercel.app/)
 
 ---
 
