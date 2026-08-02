@@ -101,6 +101,38 @@ Simulation · Alerts · Insights · Operational Workspaces
 
 The datasets are parsed once and cached in memory. `localStorage` is used only for simulation state and operator preferences.
 
+### Relationship Structure
+
+```text
+                         ┌─────────────────┐
+                         │     Flight      │
+                         └────────┬────────┘
+                                  │
+             ┌────────────────────┼────────────────────┐
+             │                    │                    │
+             ▼                    ▼                    ▼
+       Gate Events           Passengers            Baggage
+             │                    │                    │
+             ▼                    ▼                    │
+           Gates         Security Screening           │
+             │                    │                    │
+             └──────────────┬─────┴──────────────┬─────┘
+                            │                    │
+                            ▼                    ▼
+                      Staff Coverage       Retail Activity
+                            │                    │
+                            └─────────┬──────────┘
+                                      ▼
+                               Maintenance
+                                      │
+                                      ▼
+                           Alerts and Insights
+```
+
+The data layer parses and normalizes the files once, applies documented semantic mappings, creates indexes for natural join keys and exposes a shared in-memory relationship graph to every workspace.
+
+No operational total is retrieved from an external API or database.
+
 ---
 
 ## 🧰 Tech Stack
