@@ -1,0 +1,9 @@
+# AeroPulse — Project Explanation
+
+Airport operators do not work by admiring charts. They monitor a changing system, notice an exception, investigate connected operations, and act before the impact spreads. AeroPulse models that workflow. The supplied static records are replayed through a virtual clock, making gate, security, maintenance, baggage, passenger, and flight activity appear when it would have occurred.
+
+The core architecture is a client-side relational graph. PapaParse loads all eight CSVs once. A semantic adapter normalizes the source's numeric headers and joins records through flight IDs, passenger/passport and PNR identifiers, gate assignments, aircraft registrations, and staff assignments. Every surface reads from that single graph. Clicking a flight therefore reveals its passenger exposure, baggage lifecycle, gate events, maintenance history, and retail footprint without a backend or invented values.
+
+Four choices distinguish AeroPulse from a conventional dashboard. First, reasoned alerts explain what happened, why it happened, and the downstream exposure. Second, the Relationship Explorer makes all eight datasets visible in the operator's normal investigation panel rather than isolating them in a decorative graph. Third, Judge Mode overlays data lineage so every conclusion can be traced to its source files. Fourth, the Operational Intelligence view computes gate-pressure distributions, z-score anomalies, Pearson correlation and a transparent Cascade Radar forecast directly in the browser.
+
+The simulation clock is shared infrastructure, not an animation. It controls event visibility, gate state, alert activation, aircraft movement and the rolling timeline at 1×, 5×, or 30× speed. Its state is persisted locally and can be reset to a known point for a reliable live demonstration. The React 19 + Vite application is deterministic, offline-capable and fully frontend-only.

@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./components/advancedflightsview.tsx","./components/commandcenter.tsx","./components/operationspulse.tsx","./components/operatorbadge.tsx","./components/professionaldomainview.tsx","./components/professionalinsightsview.tsx","./components/settingspanel.tsx","./lib/data.ts","./lib/types.ts","./vite.config.ts"],"version":"5.9.3"}
