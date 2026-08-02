@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="./public/aeropulse-logo.png" alt="AeroPulse Logo" width="190" />
-</p>
 
 <h1 align="center">✈️ AeroPulse Control Center</h1>
 
