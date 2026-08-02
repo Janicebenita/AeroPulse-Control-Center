@@ -178,19 +178,27 @@ npm run preview
 
 ---
 
-## 🎬 90-Second Demo Flow
+## 🎬 Demo Flow
 
 <p align="center">
   <a href="https://aeropulse-airport-operation-lhar.vercel.app/"><strong>🚀 Open the Live Demo</strong></a>
 </p>
 
-1. Enter the Command Center and introduce the simulation clock.
-2. Show airport health, event feed and active reasoned alerts.
-3. Open the **Airside Movement Map**, select a glowing occupied gate and watch its connected aircraft taxi across the live route. The **Run taxi demo** button can also launch the movement instantly.
-4. Open a delayed flight and reveal its cross-dataset relationships.
-5. Explain its root-cause narrative and affected journeys.
-6. Open **Insights** and demonstrate Cascade Radar.
-7. Enable **Lineage Mode** to reveal the data behind each conclusion.
+1. Enter the **Command Center** and introduce the simulation clock.
+ 
+2. Review airport health, operational KPIs, live event feed, and reasoned alerts.
+
+3. Open the **Airside Digital Twin**, select an occupied gate, and launch the connected aircraft taxi animation using the gate or **Run Taxi Demo**.
+
+4. Open a delayed flight and inspect its cross-dataset relationships through the **Relationship Explorer**.
+
+5. Review the **Root Cause Analysis**, operational impact, affected passengers, baggage, and recommended operator action.
+
+6. Navigate to **Operational Intelligence** and examine statistical anomalies, gate pressure, Pearson correlation, and **Cascade Radar**.
+
+7. Enable **Lineage Mode** to inspect the datasets contributing to each operational insight and decision.
+
+8. Conclude by highlighting AeroPulse's connected operational workflow: **Monitor → Detect → Investigate → Act**.
 
 ---
 
