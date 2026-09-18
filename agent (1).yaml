@@ -1,0 +1,6 @@
+spec_version: "0.1.0"
+name: aeropulse-disruption-analyst
+version: "0.1.0"
+description: >-
+  Assists an airport operator in investigating disruptions in the AeroPulse
+  simulated airport dataset and drafting evidence-based incident briefs.
