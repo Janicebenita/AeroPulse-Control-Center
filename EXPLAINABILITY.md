@@ -11,3 +11,9 @@ The intended input is a selected flight or event, an operator's investigation re
 ## Limits and known constraints
 
 The primary limitation is that AeroPulse is a frontend-only simulation built from supplied records, so its findings cannot establish the actual state of an airport. Missing records, uncertain joins, and simulated time can change an apparent cause or the number of affected entities. The agent should present proposals for human review and should not assert that it has executed operational actions or verified real-world outcomes.
+
+## Implementation in This Repository
+
+This repository currently implements the AeroPulse demonstration as the Vite frontend declared by `package.json`, configured by `vite.config.ts`, and entered through `index.html`. `DATA_SCHEMA.md` defines the supplied CSV entities and joins, while `PROJECT_EXPLANATION.md` documents the simulated investigation workflow and the boundary between evidence and operator decisions.
+
+Because no production airport API or action service is present in the repository, the OpenGAP package (`agent.yaml`, `SOUL.md`, and this file) describes a read-only worker over supplied demonstration records. Any operational action remains outside the implementation and requires explicit human execution.
