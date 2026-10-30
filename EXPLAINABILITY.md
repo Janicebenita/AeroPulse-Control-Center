@@ -14,6 +14,6 @@ The primary limitation is that AeroPulse is a frontend-only simulation built fro
 
 ## Implementation in This Repository
 
-This repository currently implements the AeroPulse demonstration as the Vite frontend declared by `package.json`, configured by `vite.config.ts`, and entered through `index.html`. `DATA_SCHEMA.md` defines the supplied CSV entities and joins, while `PROJECT_EXPLANATION.md` documents the simulated investigation workflow and the boundary between evidence and operator decisions.
+`agent.py` now implements the worker's deterministic `analyze_disruption(event)` function. It normalizes delay, gate-conflict, maintenance, and missed-connection facts; records every non-zero fact as field/value evidence; assigns minor, major, or critical severity from declared thresholds; reports missing identity/time fields; and always requires operator approval. `test_agent.py` verifies that a maintenance flag produces a critical, cited result.
 
-Because no production airport API or action service is present in the repository, the OpenGAP package (`agent.yaml`, `SOUL.md`, and this file) describes a read-only worker over supplied demonstration records. Any operational action remains outside the implementation and requires explicit human execution.
+The Vite demonstration is declared by `package.json`, configured by `vite.config.ts`, and entered through `index.html`; `DATA_SCHEMA.md` defines the supplied CSV entities and joins. No production airport API or action service exists, so operational action remains outside the implementation.
